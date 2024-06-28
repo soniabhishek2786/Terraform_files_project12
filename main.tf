@@ -1,6 +1,6 @@
 # Define an AWS EC2 instance
 resource "aws_instance" "jenkinsec2" {
-  ami                    = "ami-01b799c439fd5516a"
+  ami                    = "ami-04f8d7ed2f1a54b14"
   instance_type          = "t2.medium"
   key_name               = "project12_key"
   subnet_id              = aws_subnet.public-jenkins-subnet.id
@@ -14,7 +14,7 @@ resource "aws_instance" "jenkinsec2" {
 }
 
 resource "aws_s3_bucket" "my-static-web-bucket" {
-  bucket = "jenkinstf-ec2-static-bucket-Abhishek"  # Replace with your desired bucket name
+  bucket = "jenkinstf-ec2-static-bucket-abh_123"  # Replace with your desired bucket name
 
 }
 resource "aws_s3_bucket_website_configuration" "my-static-web-bucket" {
